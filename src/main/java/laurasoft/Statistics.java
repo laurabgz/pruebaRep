@@ -7,6 +7,19 @@ import java.util.List;
 /** Class including some statistics methods for arrays of numbers */
 public class Statistics {
 
+    public double multiplyValues(double[] arrayOfNumbers) {
+        if (arrayOfNumbers.length == 0) {
+            throw new IllegalArgumentException("Array must not be empty");
+        }
+
+        double product = 1.0;
+        for (int i = 0; i < arrayOfNumbers.length; i++) {
+            product *= arrayOfNumbers[i];
+        }
+
+        return product;
+    }
+
     public double maximumValue(double[] arrayOfNumbers) {
         if (arrayOfNumbers.length == 0) {
             throw new IllegalArgumentException("Array must not be empty");

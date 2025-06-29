@@ -55,4 +55,17 @@ public class Statistics {
         }
         return StatUtils.percentile(array0fNumbers, 50.0);
     }
+
+    public double sumValue(double[] arrayOfNumbers) {
+        if (arrayOfNumbers.length == 0) {
+            throw new IllegalArgumentException("Array must not be empty");
+        }
+
+        double sum = 0;
+        for(double number: arrayOfNumbers){
+            sum += number;
+        }
+
+        return sum;
+    }
 }

@@ -77,6 +77,10 @@ public class Statistics {
             throw new IllegalArgumentException("Array must not be have more than 10 numbers");
         }
 
+        if (arrayOfNumbers.length > 5) {
+            throw new IllegalArgumentException("Oye, que el array es demasiado grande, bro");
+        }
+
         double sum = 0;
         for(double number: arrayOfNumbers){
             sum += number;

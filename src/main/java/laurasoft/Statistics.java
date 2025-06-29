@@ -75,7 +75,7 @@ public class Statistics {
         }
 
         if (arrayOfNumbers.length > 5) {
-            throw new IllegalArgumentException("Oye, que el array es demasiado grande, bro");
+            throw new IllegalArgumentException("Oye, que el array es demasiado grande, hermano");
         }
 
         double sum = 0;

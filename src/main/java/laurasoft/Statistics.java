@@ -73,6 +73,9 @@ public class Statistics {
         if (arrayOfNumbers.length == 0) {
             throw new IllegalArgumentException("Array must not be empty");
         }
+        if (arrayOfNumbers.length > 10) {
+            throw new IllegalArgumentException("Array must not be have more than 10 numbers");
+        }
 
         double sum = 0;
         for(double number: arrayOfNumbers){
@@ -81,4 +84,6 @@ public class Statistics {
 
         return sum;
     }
+
+
 }
